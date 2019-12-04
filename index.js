@@ -1,7 +1,7 @@
 const app = require('express')();
 const socketio = require('socket.io');
 
-// this is the port number where the front end will connect to. Currently, it is set up to use port 8080 or Heroku's chosen port automatically.
+// this is the port number where the front end will connect to. Currently, it is set up to use a local port (8080) on your machine or Heroku's chosen port automatically.
 const io = socketio(app.listen(process.env.PORT || 8080)); 
 
 
